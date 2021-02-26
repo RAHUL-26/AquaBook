@@ -1,0 +1,19 @@
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+fast to sms aid
+"OTgh4JICeydqANnzGbxrcoQpM5kKf7B3jlRZ9PVuHvs6w1t8aEMWazSpOTRANo5V6rBHdPie04X2sZhg"
+Service Interface
+POST ("paytmallinone/init_Transaction.php")

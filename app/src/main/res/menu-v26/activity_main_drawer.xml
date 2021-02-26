@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+
+            android:icon="@drawable/home"
+            android:iconTint="@color/aqua"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_my_orders"
+            android:icon="@drawable/myorder"
+            android:iconTint="@color/aqua"
+            android:title="My Orders" />
+        <item
+            android:id="@+id/nav_my_rewards"
+            android:iconTint="@color/aqua"
+            android:icon="@drawable/reward_icon"
+            android:title="Rewards" />
+        <item
+            android:id="@+id/nav_my_cart"
+            android:iconTint="@color/aqua"
+            android:icon="@drawable/cart"
+            android:title="My Cart" />
+        <item
+            android:id="@+id/nav_my_wishlist"
+            android:iconTint="@color/aqua"
+            android:icon="@drawable/ic_baseline_favorite_24"
+            android:title="My Wishlist" />
+
+
+        <item
+
+            android:id="@+id/nav_my_account"
+            android:iconTint="@color/aqua"
+            android:icon="@drawable/user"
+            android:title="My Account" />
+    </group>
+    <group>
+        <item
+            android:id="@+id/nav_sign_out"
+            android:iconTint="@color/aqua"
+            android:icon="@drawable/sign_out"
+            android:title="Sign Out" />
+    </group>
+</menu>

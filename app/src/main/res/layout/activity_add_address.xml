@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".AddAddressActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.Pdd1.AppBarOverlay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/Theme.Pdd1.PopupOverlay"/>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:nestedScrollingEnabled="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/imageView13"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/button_round"
+                android:elevation="1dp"
+                android:padding="4dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
+                app:srcCompat="@drawable/add_address_location_icon"
+                app:tint="@color/aqua" />
+
+            <EditText
+                android:id="@+id/city_etv"
+                android:theme="@style/EditTextTheme"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:elevation="3dp"
+                android:padding="4dp"
+                android:background="@drawable/slider_background"
+                android:layout_marginTop="16dp"
+                android:textColorHint="#33000000"
+                android:layout_marginHorizontal="16dp"
+                android:textColor="@color/black"
+                android:inputType="textPersonName"
+                android:hint="City*"
+                />
+
+            <EditText
+                android:id="@+id/locality_etv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/slider_background"
+                android:elevation="3dp"
+                android:ems="10"
+                android:gravity="start"
+                android:scrollbars="vertical"
+                android:isScrollContainer="true"
+                android:overScrollMode="always"
+                android:scrollbarStyle="insideInset"
+                android:hint="Locality, area or street*"
+                android:inputType="textMultiLine"
+                android:lines="3"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textColorHint="#33000000" />
+
+            <EditText
+                android:id="@+id/flat_no_etv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColorHint="#33000000"
+                android:scrollbars="vertical"
+                android:isScrollContainer="true"
+                android:ems="10"
+                android:lines="3"
+                android:gravity="start"
+                android:elevation="3dp"
+                android:padding="8dp"
+                android:background="@drawable/slider_background"
+                android:layout_marginHorizontal="16dp"
+                android:textColor="@color/black"
+                android:inputType="textMultiLine"
+                android:hint="Flat No., Building Name*"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@android:color/transparent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/pincode_etv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="2dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:elevation="3dp"
+                    android:background="@drawable/slider_background"
+                    android:textColorHint="#33000000"
+                    android:textColor="@color/black"
+                    android:hint="Pincode*"
+                    android:padding="8dp"
+                    android:inputType="number" />
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/state_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginVertical="2dp"
+                    android:textColorHint="#33000000"
+                    android:elevation="3dp"
+                    android:background="@drawable/slider_background"
+                    android:backgroundTint="#E9FFFF"
+                    android:paddingHorizontal="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="16dp"/>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/landmark_etv"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:textColorHint="#33000000"
+                android:textColor="@color/black"
+                android:elevation="2dp"
+                android:background="@drawable/slider_background"
+                android:layout_weight="1"
+                android:hint="Landmark (optional)"
+                android:padding="8dp"
+                android:inputType="text" />
+
+            <View
+                android:id="@+id/divider12"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#EFEFEF" />
+
+            <EditText
+                android:id="@+id/name_etv"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_weight="1"
+                android:elevation="2dp"
+                android:textColor="@color/black"
+                android:background="@drawable/slider_background"
+                android:textColorHint="#33000000"
+                android:hint="Name*"
+                android:padding="8dp"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/mobile_no_etv"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textColorHint="#33000000"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_weight="1"
+                android:elevation="2dp"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:background="@drawable/slider_background"
+                android:hint="Mobile No.*"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/alternate_mobile_no_etv"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:textColorHint="#33000000"
+                android:layout_weight="1"
+                android:elevation="2dp"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:background="@drawable/slider_background"
+                android:hint="Alternate Mobile No. (optional)"
+                android:inputType="number" />
+
+            <Button
+                android:id="@+id/save_btn"
+                android:layout_width="match_parent"
+
+                android:layout_height="60dp"
+                android:layout_margin="16dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:text="Save"
+                android:textColor="@color/white"
+                android:textAllCaps="true" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
