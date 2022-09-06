@@ -15,7 +15,7 @@ I will try to fix them asap.
 
 ### Ratings View
 
-<img src="https://user-images.githubusercontent.com/55587127/188670872-689f7ec8-f343-4355-b8e8-51c45a5c3dbc.jpeg" img align ="left" width="180" height="380"/>
+<img src="https://user-images.githubusercontent.com/55587127/188670872-689f7ec8-f343-4355-b8e8-51c45a5c3dbc.jpeg" img align ="center" width="180" height="380"/>
 
 
 ### Search Fragment
